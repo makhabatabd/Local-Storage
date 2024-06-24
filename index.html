@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="register-form">
+        <h1>Register</h1>
+        <form id="register-form">
+          <input
+            type="text"
+            id="reg-username"
+            placeholder="Username"
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            id="reg-password"
+            placeholder="Password"
+            autocomplete="new-password"
+          />
+          <button type="button" id="register-button">Register</button>
+        </form>
+        <p>
+          Already have an account? <a href="#" id="show-login">Login here</a>
+        </p>
+      </div>
+      <div id="login-form" style="display: none">
+        <h1>Login</h1>
+        <form id="login-form">
+          <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            autocomplete="current-password"
+          />
+          <button type="button" id="login-button">Login</button>
+        </form>
+        <p>
+          Don't have an account?
+          <a href="#" id="show-register">Register here</a>
+        </p>
+      </div>
+      <div id="shop" style="display: none">
+        <h1>Online Store</h1>
+        <div id="products"></div>
+        <h2>Your Cart</h2>
+        <div id="cart"></div>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="logout-button">Logout</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
